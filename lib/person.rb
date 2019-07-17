@@ -1,6 +1,5 @@
 # your code goes here
 
-# your code goes here
 class Person
     attr_accessor :bank_account
     attr_reader :name
@@ -58,46 +57,46 @@ class Person
             return false
         end
     end
- 
+
     def get_paid(salary)
         @bank_account += salary
-            return “all about the benjamins”
+            return "all about the benjamins"
     end
- 
+
     def take_bath
         @hygiene += 4
         self.hygiene=(@hygiene)
-        return “♪ Rub-a-dub just relaxing in the tub ♫”
+        return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
- 
+
     def work_out
         @happiness += 2
         self.happiness=(@happiness)
         @hygiene -= 3
         self.hygiene=(@hygiene)
-        return “♪ another one bites the dust ♫”
+        return "♪ another one bites the dust ♫"
     end
- 
+
     def call_friend(friend)
         @happiness += 3
         friend.happiness += 3
         self.happiness=(@happiness)
-        return “Hi #{friend.name}! It’s #{self.name}. How are you?”
+        "Hi #{friend.name}! It's #{self.name}. How are you?"
     end
- 
+
     def start_conversation(friend, topic)
-        if topic == “politics”
+        if topic == "politics"
             @happiness -= 2
             friend.happiness -= 2
             self.happiness=(@happiness)
-            return “blah blah partisan blah lobbyist”
-        elsif topic == “weather”
+            return "blah blah partisan blah lobbyist"
+        elsif topic == "weather"
             @happiness += 1
             friend.happiness += 1
             self.happiness=(@happiness)
-            return “blah blah sun blah rain”
+            return "blah blah sun blah rain"
         else
-            return “blah blah blah blah blah”
+            return "blah blah blah blah blah"
         end
     end
- end
+end
